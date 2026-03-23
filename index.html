@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sumit Singh — Full Stack Developer | MERN Stack Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Sumit Singh, a B.Tech Computer Science student specializing in MERN Stack development. Explore projects, skills, certifications, and more.">
+  <meta name="keywords"
+    content="Sumit Singh, Full Stack Developer, MERN Stack, Portfolio, Web Developer, React, Node.js">
+  <meta name="author" content="Sumit Singh">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ═══════════════════ PAGE LOADER ═══════════════════ -->
+  <div class="page-loader">
+    <div class="loader-text">
+      <span style="animation-delay:0.1s">S</span><span style="animation-delay:0.15s">u</span><span
+        style="animation-delay:0.2s">m</span><span style="animation-delay:0.25s">i</span><span
+        style="animation-delay:0.3s">t</span><span style="animation-delay:0.4s">&nbsp;</span><span
+        style="animation-delay:0.45s">S</span><span style="animation-delay:0.5s">i</span><span
+        style="animation-delay:0.55s">n</span><span style="animation-delay:0.6s">g</span><span
+        style="animation-delay:0.65s">h</span>
+    </div>
+    <div class="loader-bar">
+      <div class="loader-bar-fill"></div>
+    </div>
+    <div class="loader-counter">0%</div>
+  </div>
+
+  <!-- ═══════════════════ CUSTOM CURSOR ═══════════════════ -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- ═══════════════════ NAVBAR ═══════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-text">S</span>
+        <span class="logo-dot">.</span>
+      </a>
+      <div class="nav-center" id="navLinks">
+        <a href="#about" class="nav-link"><span class="nav-link-num">01</span>About</a>
+        <a href="#skills" class="nav-link"><span class="nav-link-num">02</span>Skills</a>
+        <a href="#projects" class="nav-link"><span class="nav-link-num">03</span>Projects</a>
+        <a href="#certifications" class="nav-link"><span class="nav-link-num">04</span>Certs</a>
+        <a href="#tools" class="nav-link"><span class="nav-link-num">05</span>Tools</a>
+      </div>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <span class="theme-icon theme-icon-sun">☀</span>
+          <span class="theme-icon theme-icon-moon">☽</span>
+        </button>
+        <a href="#contact" class="nav-cta"><span>Let's Talk</span></a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════ SECTION 1: HERO ═══════════════════ -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <p class="hero-label">PORTFOLIO · 2025</p>
+        <h1 class="hero-name" id="heroName"></h1>
+        <div class="hero-role">
+          <span class="role-line"></span>
+          <span>Full Stack Developer | Software Engineer Intern</span>
+        </div>
+        <p class="hero-tagline">Building real-world products that solve student problems.</p>
+        <p class="hero-description">Building Centrio.io — an AI-powered student ecosystem platform — while mastering full stack development, scalable systems, and real-world product thinking.</p>
+        <div class="cta-row">
+          <a href="#projects" class="btn btn-primary"><span>View Projects</span></a>
+          <a href="https://drive.google.com/file/d/1kiiC9M2Lbk_QxLbeeJe2SYaUNebbOYLm/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-ghost"><span>Download Resume</span></a>
+        </div>
+      </div>
+      <div class="hero-right reveal-right" style="display: flex; align-items: flex-end; justify-content: center;">
+        <div class="hero-decoration" style="width: 100%; height: 100%; position: relative; display: flex; align-items: flex-end; justify-content: center;">
+          <div class="deco-circle-lg"></div>
+          <div class="deco-circle-md"></div>
+          <div class="hero-ring"></div>
+          
+          <!-- User Portrait -->
+          <img src="https://drive.google.com/uc?export=view&id=1qJOjEEA90ZscfAvPO89sgBAwRtWAS3Mw" alt="Sumit Singh" style="width: 100%; max-width: 500px; height: auto; object-fit: contain; position: relative; z-index: 10; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.4)) contrast(1.05); transform: translateY(20px);" loading="lazy">
+
+          <div class="deco-dot" style="top:20%;left:30%"></div>
+          <div class="deco-dot" style="top:60%;left:10%"></div>
+          <div class="deco-dot" style="top:35%;left:85%"></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator" id="scrollIndicator">
+      <span class="scroll-arrow">↓</span>
+      <span class="scroll-label">SCROLL</span>
+    </div>
+  </section>
+
+  <!-- ═══════ MARQUEE — Divider between Hero & About ═══════ -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <span class="marquee-item">Developer</span>
+      <span class="marquee-item"><span class="gold">✦</span></span>
+      <span class="marquee-item">Problem Solver</span>
+      <span class="marquee-item"><span class="gold">✦</span></span>
+      <span class="marquee-item">MERN Stack</span>
+      <span class="marquee-item"><span class="gold">✦</span></span>
+      <span class="marquee-item">Clean Code</span>
+      <span class="marquee-item"><span class="gold">✦</span></span>
+      <span class="marquee-item">Full Stack</span>
+      <span class="marquee-item"><span class="gold">✦</span></span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ SECTION 2: ABOUT ME ═══════════════════ -->
+  <section class="section" id="about">
+    <div class="container two-col">
+      <div class="col-left reveal-left">
+        <span class="section-watermark">02</span>
+        <p class="section-label">About Me</p>
+        <h2 class="section-title">Career Snapshot</h2>
+        <p class="body-text">
+          I am a third-year B.Tech CSE student at Lovely Professional University with 3+ years of programming experience. I focus on building real-world applications rather than just academic projects, with a strong interest in product development and solving problems faced by students.
+          <br><br>
+          I enjoy owning the complete lifecycle of a product — from designing intuitive frontends to building robust backends. Full stack development allows me to transform ideas into fully functional products that users can actually use. My ultimate goal is to become a highly skilled Software Engineer and eventually build a successful startup focused on student ecosystems, AI tools, and productivity platforms.
+        </p>
+      </div>
+      <div class="col-right reveal-right" style="display: flex; flex-direction: column; align-items: center; gap: 2rem;">
+        <div class="profile-photo-wrapper">
+          <div class="profile-photo-glow"></div>
+          <div class="profile-photo-border"></div>
+          <img src="https://drive.google.com/uc?export=view&id=1qJOjEEA90ZscfAvPO89sgBAwRtWAS3Mw" alt="Sumit Singh" class="profile-photo" loading="lazy">
+        </div>
+        
+        <div class="stats-row stagger-children">
+          <div class="stat-card reveal">
+            <span class="stat-number" data-target="4" data-suffix="+">0</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-number" data-target="3" data-suffix="">0</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-number" data-target="500" data-suffix="+">0</span>
+            <span class="stat-label">DSA Problems Solved</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════ SECTION 2.5: MY JOURNEY ═══════════════════ -->
+  <section class="section" id="journey">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">My Story</p>
+        <h2 class="section-title centered">My Journey into Tech 🚀</h2>
+        <p class="section-subtitle centered" style="max-width: 800px; margin: 0 auto;">
+          From curiosity to creation.<br><br>
+          <span style="font-size: 1.05rem; color: var(--muted); display: block; margin-top: 1rem; line-height: 1.6;">Since childhood, I have always been curious about how devices work. I used to wonder what happens inside machines and how technology powers our daily lives. As I grew older, this curiosity turned into a deep interest in computers, especially their hardware and inner workings.</span>
+        </p>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+        <div class="timeline-progress" id="timelineProgress"></div>
+
+        <!-- Stage 1 -->
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"><span class="icon">🏫</span></div>
+          <div class="timeline-content">
+            <div class="timeline-image-wrapper">
+              <img src="https://media.licdn.com/dms/image/v2/C4E1BAQF6BoZ_Ex983A/company-background_10000/company-background_10000/0/1584151410495/dr_bansi_dhar_school_cover?e=2147483647&v=beta&t=jjStLce-JoyjFdUOpcj3cu-ED6JIAxcJEsPN5KFMsxM" alt="Dr Bansi Dhar School" class="timeline-image" loading="lazy">
+              <div class="timeline-gradient"></div>
+            </div>
+            <div class="timeline-text">
+              <h3 class="timeline-title">The Beginning<br><span class="timeline-location">Kota, Rajasthan</span></h3>
+              <p class="timeline-desc">Till 10th standard, I lived in Kota, Rajasthan, where I studied at Dr. Bansi Dhar School. This is where my academic foundation was built and I scored 80.3% in my 10th board exams.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 2 -->
+        <div class="timeline-item reveal-up" style="transition-delay: 0.1s">
+          <div class="timeline-dot"><span class="icon">📈</span></div>
+          <div class="timeline-content reverse">
+            <div class="timeline-text text-mobile-left">
+              <h3 class="timeline-title">A New Chapter<br><span class="timeline-location">Vapi, Gujarat</span></h3>
+              <p class="timeline-desc">I moved to Vapi, Gujarat and joined Fellowship Mission School for my 11th and 12th. This phase shaped my discipline and adaptability, where I scored 73%.</p>
+            </div>
+            <div class="timeline-image-wrapper">
+              <img src="https://www.schooldekho.org/storage/gallery//bzd0y5ogy3w4ocw0cc44c0gs4gcg0w.jpg" alt="Fellowship Mission School" class="timeline-image" loading="lazy">
+              <div class="timeline-gradient"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 3 -->
+        <div class="timeline-item reveal-up" style="transition-delay: 0.2s">
+          <div class="timeline-dot highlight"><span class="icon">🎓</span></div>
+          <div class="timeline-content">
+            <div class="timeline-image-wrapper">
+              <img src="https://happenings.lpu.in/wp-content/uploads/2024/09/Lovely-Professional-University-LPU-campus-1-scaled.jpg" alt="LPU Campus" class="timeline-image" loading="lazy">
+              <div class="timeline-gradient highlight-gradient"></div>
+            </div>
+            <div class="timeline-text">
+              <div class="present-tag">Present Day</div>
+              <h3 class="timeline-title">Turning Passion into Career<br><span class="timeline-location">Lovely Professional University</span></h3>
+              <p class="timeline-desc">With a growing interest in computers, I joined Lovely Professional University. Here, I am pursuing BTech in Computer Science and currently hold a CGPA of 8.12, actively building real-world projects and skills.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-closing reveal">
+        <p>"This is just the beginning. The best is yet to come."</p>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════ SECTION 3: TECHNICAL SKILLS ═══════════════════ -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Skills</p>
+        <h2 class="section-title centered">Core Technical Skills</h2>
+        <p class="section-subtitle centered">Technologies I work with, organized by domain.</p>
+      </div>
+      <div class="skills-grid stagger-children">
+        <div class="skill-card reveal-rotate">
+          <span class="skill-icon">⟨/⟩</span>
+          <h3 class="skill-card-title">Frontend</h3>
+          <div class="tags">
+            <span class="tag">HTML5 & CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">React.js</span>
+            <span class="tag">Tailwind CSS</span>
+            <span class="tag">Responsive UI/UX</span>
+          </div>
+        </div>
+        <div class="skill-card reveal-rotate">
+          <span class="skill-icon">{ }</span>
+          <h3 class="skill-card-title">Backend</h3>
+          <div class="tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">Express.js</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">Auth Systems</span>
+          </div>
+        </div>
+        <div class="skill-card reveal-rotate">
+          <span class="skill-icon">◉</span>
+          <h3 class="skill-card-title">Databases</h3>
+          <div class="tags">
+            <span class="tag">MongoDB</span>
+            <span class="tag">MySQL (Basic)</span>
+          </div>
+        </div>
+        <div class="skill-card reveal-rotate">
+          <span class="skill-icon">↗</span>
+          <h3 class="skill-card-title">Tools &amp; DevOps</h3>
+          <div class="tags">
+            <span class="tag">Git &amp; GitHub</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">Postman</span>
+            <span class="tag">AWS (Beginner)</span>
+            <span class="tag">Antigravity AI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════ SECTION 4: PROJECTS ═══════════════════ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header-left reveal-left">
+        <span class="section-watermark">04</span>
+        <p class="section-label">Work</p>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">A selection of things I've built — quality over quantity.</p>
+      </div>
+      <div class="projects-grid stagger-children">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal-scale featured-card">
+          <div class="interactive-preview">
+            <div class="browser-head">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="url-bar">https://centrio-io.vercel.app/</span>
+            </div>
+            <div class="iframe-zoom-wrapper">
+              <iframe src="https://centrio-io.vercel.app/" title="Centrio.io Live Preview" loading="lazy"></iframe>
+            </div>
+          </div>
+          
+          <div class="project-info">
+            <span class="project-number">LIVE</span>
+            <h3 class="project-title">Centrio.io – AI-Powered Student Ecosystem</h3>
+            <p class="project-desc">
+              A full-stack platform bringing together student communities, collaboration tools, and productivity features. Includes a Reddit-like community system, note sharing, event booking, and an AI chatbot. Built with a strong focus on scalability and real-world deployment.
+            </p>
+            <div class="project-meta">
+              <div class="project-tools">
+                <span class="meta-label">Tools:</span>
+                <div class="tags">
+                  <span class="tag">MERN Stack</span>
+                  <span class="tag">Tailwind CSS</span>
+                  <span class="tag">AWS</span>
+                  <span class="tag">Antigravity</span>
+                </div>
+              </div>
+              <div class="project-skills">
+                <span class="meta-label">Skills:</span>
+                <span class="meta-text">Full Stack Dev, System Design, Product Thinking, Scalability</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://centrio-io.vercel.app/" target="_blank" rel="noopener" class="project-link">→ Open Full Window</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal-scale">
+          <span class="project-number">02</span>
+          <h3 class="project-title">AI Travel Planner with Chatbot</h3>
+          <p class="project-desc">
+            A smart travel planning platform that helps users find stays across Indian cities with price tracking and chatbot-based assistance. Uses targeted rule-based logic and API integrations for efficiency and high-precision control.
+          </p>
+          <div class="project-meta">
+            <div class="project-tools">
+              <span class="meta-label">Tools:</span>
+              <div class="tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">REST APIs</span>
+              </div>
+            </div>
+            <div class="project-skills">
+              <span class="meta-label">Skills:</span>
+              <span class="meta-text">AI Logic Design, Backend Thinking, Product Design</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener" class="project-link">→ View on GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal-scale featured-card">
+          <div class="interactive-preview">
+            <div class="browser-head">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="url-bar">https://recommendus.vercel.app/</span>
+            </div>
+            <div class="iframe-zoom-wrapper">
+              <iframe src="https://recommendus.vercel.app/" title="Recommend Us Live Preview" loading="lazy"></iframe>
+            </div>
+          </div>
+          
+          <div class="project-info">
+            <span class="project-number">LIVE</span>
+            <h3 class="project-title">Series & Movies Recommendation</h3>
+            <p class="project-desc">
+              A recommendation system that suggests content based on genres and user preferences, efficiently handling 10k+ database entries. Includes custom survey-based insights and query optimizations to improve user engagement.
+            </p>
+            <div class="project-meta">
+              <div class="project-tools">
+                <span class="meta-label">Tools:</span>
+                <div class="tags">
+                  <span class="tag">React.js</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">MongoDB</span>
+                </div>
+              </div>
+              <div class="project-skills">
+                <span class="meta-label">Skills:</span>
+                <span class="meta-text">Frontend Dev, Query Optimization, Data Handling</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://recommendus.vercel.app/" target="_blank" rel="noopener" class="project-link">→ Open Full Window</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal-scale">
+          <span class="project-number">04</span>
+          <h3 class="project-title">Spider-Man Themed Portfolio</h3>
+          <p class="project-desc">
+            A visually engaging portfolio website with specialized comic-style UI, bespoke animations, and dynamic elements. Designed to stand out and create a memorable, premium impression for recruiters and peers.
+          </p>
+          <div class="project-meta">
+            <div class="project-tools">
+              <span class="meta-label">Tools:</span>
+              <div class="tags">
+                <span class="tag">HTML/CSS</span>
+                <span class="tag">React</span>
+                <span class="tag">Animations</span>
+              </div>
+            </div>
+            <div class="project-skills">
+              <span class="meta-label">Skills:</span>
+              <span class="meta-text">Creative UI Design, Animation, Personal Branding</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener" class="project-link">→ View on GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════ SECTION 5: CERTIFICATIONS ═══════════════════ -->
+  <section class="section section-alt" id="certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Credentials</p>
+        <h2 class="section-title centered">Certifications</h2>
+      </div>
+      <div class="cert-grid stagger-children">
+        <div class="cert-card reveal-left">
+          <div class="cert-icon">✦</div>
+          <div class="cert-info">
+            <h3 class="cert-name">AWS Cloud Fundamentals</h3>
+            <p class="cert-issuer">Amazon AWS</p>
+            <span class="cert-year">2025</span>
+            <a href="#" class="cert-verify" target="_blank" rel="noopener">→ Verify</a>
+          </div>
+        </div>
+        <div class="cert-card reveal-right">
+          <div class="cert-icon">◈</div>
+          <div class="cert-info">
+            <h3 class="cert-name">Data Structures &amp; Algorithms</h3>
+            <p class="cert-issuer">Self-driven (dailyDSA)</p>
+            <span class="cert-year">Ongoing</span>
+            <a href="#" class="cert-verify" target="_blank" rel="noopener">→ View Repo</a>
+          </div>
+        </div>
+        <div class="cert-card reveal-left">
+          <div class="cert-icon">✧</div>
+          <div class="cert-info">
+            <h3 class="cert-name">Full Stack Development (MERN)</h3>
+            <p class="cert-issuer">Self-learned</p>
+            <span class="cert-year">Ongoing</span>
+            <a href="#" class="cert-verify" target="_blank" rel="noopener">→ View Work</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════ SECTION 6: TOOLS TABLE ═══════════════════ -->
+  <section class="section" id="tools">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Overview</p>
+        <h2 class="section-title centered">Tools &amp; Platforms</h2>
+        <p class="section-subtitle centered">Structured for quick recruiter scanning.</p>
+      </div>
+      <div class="tech-ecosystem grid-ecosystem">
+        <!-- Node 1: Frontend -->
+        <div class="eco-node reveal-up">
+          <div class="eco-scanner"></div>
+          <div class="eco-header">
+            <span class="eco-icon">◆</span>
+            <h3>Frontend Core</h3>
+          </div>
+          <div class="eco-body">
+            <div class="tech-item"><span class="tech-dot"></span>React.js</div>
+            <div class="tech-item"><span class="tech-dot"></span>JavaScript (ES6+)</div>
+            <div class="tech-item"><span class="tech-dot"></span>Tailwind CSS</div>
+            <div class="tech-item"><span class="tech-dot"></span>HTML5 / CSS3</div>
+          </div>
+          <div class="eco-bg-glow"></div>
+        </div>
+
+        <!-- Node 2: Backend -->
+        <div class="eco-node reveal-up" style="transition-delay: 0.1s">
+          <div class="eco-scanner"></div>
+          <div class="eco-header">
+            <span class="eco-icon">◈</span>
+            <h3>Backend & API</h3>
+          </div>
+          <div class="eco-body">
+            <div class="tech-item"><span class="tech-dot"></span>Node.js</div>
+            <div class="tech-item"><span class="tech-dot"></span>Express.js</div>
+            <div class="tech-item"><span class="tech-dot"></span>RESTful APIs</div>
+            <div class="tech-item"><span class="tech-dot"></span>Auth Systems (JWT)</div>
+          </div>
+          <div class="eco-bg-glow"></div>
+        </div>
+
+        <!-- Node 3: Database -->
+        <div class="eco-node reveal-up" style="transition-delay: 0.2s">
+          <div class="eco-scanner"></div>
+          <div class="eco-header">
+            <span class="eco-icon">◉</span>
+            <h3>Data Layer</h3>
+          </div>
+          <div class="eco-body">
+            <div class="tech-item"><span class="tech-dot"></span>MongoDB (NoSQL)</div>
+            <div class="tech-item"><span class="tech-dot"></span>MySQL (Relational)</div>
+            <div class="tech-item"><span class="tech-dot"></span>Schema Design</div>
+          </div>
+          <div class="eco-bg-glow"></div>
+        </div>
+
+        <!-- Node 4: Cloud & Tools -->
+        <div class="eco-node reveal-up" style="transition-delay: 0.3s">
+          <div class="eco-scanner"></div>
+          <div class="eco-header">
+            <span class="eco-icon">▲</span>
+            <h3>DevOps & Cloud</h3>
+          </div>
+          <div class="eco-body">
+            <div class="tech-item"><span class="tech-dot"></span>AWS (EC2, S3)</div>
+            <div class="tech-item"><span class="tech-dot"></span>Git & GitHub</div>
+            <div class="tech-item"><span class="tech-dot"></span>Postman</div>
+            <div class="tech-item"><span class="tech-dot"></span>Antigravity AI</div>
+          </div>
+          <div class="eco-bg-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════ ACHIEVEMENTS GALLERY ═══════════════════ -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Milestones</p>
+        <h2 class="section-title centered">Achievements &amp; Gallery</h2>
+        <p class="section-subtitle centered">Highlights of my journey, competitions, and moments.</p>
+      </div>
+      
+      <div class="gallery-grid stagger-children">
+        <!-- Photo 1 -->
+        <div class="gallery-card reveal-up">
+          <div class="gallery-img-wrapper">
+            <img src="https://content.fortune.com/wp-content/uploads/2023/10/GettyImages-1487043931-e1697551475377.jpg" alt="1st Runner-Up" loading="lazy">
+          </div>
+          <div class="gallery-content">
+            <h3 class="gallery-title">1st Runner-Up</h3>
+            <p class="gallery-desc">Infineon Technologies "Defend the Kingdom" Hackathon</p>
+          </div>
+        </div>
+
+        <!-- Photo 2 -->
+        <div class="gallery-card reveal-up" style="transition-delay: 0.1s">
+          <div class="gallery-img-wrapper">
+            <img src="https://drive.google.com/uc?export=view&id=1Q92OCuwFikALzb3QAiFVtcEqyhXXkyc5" alt="2nd Runner-Up" loading="lazy">
+          </div>
+          <div class="gallery-content">
+            <h3 class="gallery-title">2nd Runner-Up</h3>
+            <p class="gallery-desc">GFG Python Data Science Challenge</p>
+          </div>
+        </div>
+
+        <!-- Photo 3 -->
+        <div class="gallery-card reveal-up" style="transition-delay: 0.2s">
+          <div class="gallery-img-wrapper">
+            <img src="https://drive.google.com/uc?export=view&id=1ikhZJyI646AkBRnFZnpbrPa6gAfQPX5L" alt="Mentorship Excellence" loading="lazy">
+          </div>
+          <div class="gallery-content">
+            <h3 class="gallery-title">Mentorship Excellence</h3>
+            <p class="gallery-desc">Mentored 200+ students for Lion’s Club</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════ SECTION 7: SOFT SKILLS & ACTIVITIES ═══════════════════ -->
+  <section class="section section-alt" id="softskills">
+    <div class="container two-col">
+      <div class="col-left reveal-left">
+        <p class="section-label">Soft Skills</p>
+        <div class="soft-skills-list">
+          <div class="soft-skill-row">
+            <h3 class="soft-skill-name">Problem Solving</h3>
+            <p class="soft-skill-desc">Breaking down complex challenges into clear, logical steps.</p>
+          </div>
+          <div class="soft-skill-row">
+            <h3 class="soft-skill-name">Product Thinking</h3>
+            <p class="soft-skill-desc">Focusing extensively on real-world use cases, usability, and metrics.</p>
+          </div>
+          <div class="soft-skill-row">
+            <h3 class="soft-skill-name">Team Collaboration</h3>
+            <p class="soft-skill-desc">Active startup experience at Uni-Unite coordinating with teams.</p>
+          </div>
+          <div class="soft-skill-row">
+            <h3 class="soft-skill-name">Adaptability</h3>
+            <p class="soft-skill-desc">Fast learner, rapidly adopting new tools like AI, AWS, and modern stacks.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-right reveal-right">
+        <p class="section-label">Activities & Growth</p>
+        <div class="activities-list">
+          <div class="activity-card">
+            <h3 class="activity-name">Startup Core Contributor</h3>
+            <p class="activity-desc">Currently working as a core contributor at Uni-Unite, building community solutions and conducting user surveys.</p>
+          </div>
+          <div class="activity-card">
+            <h3 class="activity-name">DSA Self-Practice (500+ Problems)</h3>
+            <p class="activity-desc">Systematically solving problems across major topics to continuously improve optimization skills.</p>
+          </div>
+          <div class="activity-card">
+            <h3 class="activity-name">Bridging AI & Web</h3>
+            <p class="activity-desc">Actively combining foundational AI tooling with modern web environments to create seamless digital experiences.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ MARQUEE — Divider before GitHub ═══════ -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <span class="marquee-item">React</span>
+      <span class="marquee-item"><span class="gold">✦</span></span>
+      <span class="marquee-item">Node.js</span>
+      <span class="marquee-item"><span class="gold">✦</span></span>
+      <span class="marquee-item">MongoDB</span>
+      <span class="marquee-item"><span class="gold">✦</span></span>
+      <span class="marquee-item">Express</span>
+      <span class="marquee-item"><span class="gold">✦</span></span>
+      <span class="marquee-item">JavaScript</span>
+      <span class="marquee-item"><span class="gold">✦</span></span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ SECTION 8: GITHUB ═══════════════════ -->
+  <section class="section" id="github">
+    <div class="container">
+      <div class="github-profile-card reveal-scale">
+        <svg class="github-icon" viewBox="0 0 24 24" width="40" height="40" fill="var(--accent)">
+          <path
+            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+        </svg>
+        <!-- REPLACE with real GitHub username -->
+        <p class="github-username">@SumitSingh3101</p>
+        <p class="github-subtitle">Building in public. All projects documented.</p>
+        <!-- REPLACE with real GitHub profile link -->
+        <a href="https://github.com/SumitSingh3101" target="_blank" rel="noopener" class="btn btn-primary"><span>View
+            GitHub Profile →</span></a>
+      </div>
+      <div class="repo-grid stagger-children">
+        <div class="repo-card reveal">
+          <p class="repo-name">transparent-insurance-chatbot</p>
+          <p class="repo-desc">Insurance policy explainer chatbot.</p>
+          <div class="repo-meta">
+            <span class="tag">JavaScript</span>
+            <span class="repo-stars">⭐ 0</span>
+          </div>
+        </div>
+        <div class="repo-card reveal">
+          <p class="repo-name">dsa-problem-tracker</p>
+          <p class="repo-desc">Track your DSA practice and streaks.</p>
+          <div class="repo-meta">
+            <span class="tag">JavaScript</span>
+            <span class="repo-stars">⭐ 0</span>
+          </div>
+        </div>
+        <div class="repo-card reveal">
+          <p class="repo-name">portfolio-website</p>
+          <p class="repo-desc">Personal portfolio built with React.</p>
+          <div class="repo-meta">
+            <span class="tag">JavaScript</span>
+            <span class="repo-stars">⭐ 0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════ SECTION 9: CONTACT ═══════════════════ -->
+  <section class="section section-alt" id="contact">
+    <div class="container two-col">
+      <div class="col-left reveal-left">
+        <p class="section-label">Get In Touch</p>
+        <h2 class="contact-heading">Let's Connect</h2>
+        <p class="contact-subtext">Open to internships, collaborations, and full-time opportunities. Reach out — I reply
+          within 24 hours.</p>
+        <div class="contact-rows">
+          <!-- REPLACE placeholder email, LinkedIn, location -->
+          <div class="contact-row">
+            <span class="contact-icon">📧</span>
+            <a href="mailto:sumit1.2.2005singh@gmail.com">sumit1.2.2005singh@gmail.com</a>
+          </div>
+          <div class="contact-row">
+            <span class="contact-icon">💼</span>
+            <a href="https://www.linkedin.com/in/ranawatsumit/" target="_blank" rel="noopener">linkedin.com/in/ranawatsumit</a>
+          </div>
+          <div class="contact-row">
+            <span class="contact-icon">📍</span>
+            <span>Punjab, India</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-right reveal-right">
+        <form class="contact-form" action="mailto:sumit1.2.2005singh@gmail.com" method="POST" enctype="text/plain">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="your@email.com" required>
+          <textarea name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+          <button type="submit" class="btn btn-primary btn-full"><span>Send Message →</span></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ SECTION 10: FOOTER ═══════════════════ -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-name">Sumit Singh</p>
+      <p class="footer-role">Full Stack Developer · MERN Stack</p>
+      <nav class="footer-nav">
+        <a href="#about">About</a>
+        <span class="footer-sep">·</span>
+        <a href="#skills">Skills</a>
+        <span class="footer-sep">·</span>
+        <a href="#projects">Projects</a>
+        <span class="footer-sep">·</span>
+        <a href="#certifications">Certs</a>
+        <span class="footer-sep">·</span>
+        <a href="#tools">Tools</a>
+        <span class="footer-sep">·</span>
+        <a href="#github">GitHub</a>
+        <span class="footer-sep">·</span>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2025 Sumit Singh. Built with purpose.</p>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════ AI CHATBOT ═══════════════════ -->
+  <button class="chat-trigger" id="chatTrigger" aria-label="Open AI Chat">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+    </svg>
+  </button>
+
+  <div class="chat-panel" id="chatPanel">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-avatar" style="padding: 0; overflow: hidden; border: 2px solid var(--accent); background: none;">
+          <img src="https://drive.google.com/uc?export=view&id=1qJOjEEA90ZscfAvPO89sgBAwRtWAS3Mw" alt="Sumit" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div>
+          <h3 class="chat-title">Sumit AI</h3>
+          <span class="chat-status">Online</span>
+        </div>
+      </div>
+      <button class="chat-close" id="chatClose" aria-label="Close Chat">×</button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <!-- Chat bubbles will go here -->
+    </div>
+    <div class="chat-input-area">
+      <input type="text" id="chatInput" placeholder="Ask me anything about my work..." autocomplete="off">
+      <button id="chatSend" aria-label="Send Message">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
